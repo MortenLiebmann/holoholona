@@ -1,6 +1,6 @@
 ﻿namespace Holoholona.Models
 {
-    public class Animal
+    public abstract class Mammal : IAnimal
     {
         public int Id { get; set; }
         public string Name { get; set; }

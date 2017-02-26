@@ -18,7 +18,7 @@ namespace Holoholona.Controllers
         [HttpGet]
         public ActionResult GetDog()
         {
-            Animal dog = new Animal { Name = "Chihuahua", Type = "Dog" };
+            Mammal dog = new Dog { Name = "Chihuahua", Type = "Dog" };
             return Json(dog, JsonRequestBehavior.AllowGet);
         }
     }

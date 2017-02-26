@@ -4,7 +4,7 @@
         var getDog = (function() {
             $.ajax({
                 method: "GET",
-                url: "GetDog",
+                url: "GetMammals",
                 dataType: "json",
                 success: function (response) {
                     print(response);
@@ -16,7 +16,10 @@
         });
 
         function print(data) {
-            document.write(data.Name + ": " + data.Type);
+            document.write(
+                data.Dog.Name + ": " + data.Dog.Type + " / " +
+                data.Cat.Name + ": " + data.Cat.Type
+                );
         }
 
         return {

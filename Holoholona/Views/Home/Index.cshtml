@@ -1,0 +1,41 @@
+﻿<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script>
+    var data = (function ($) { 
+        var getDog = (function() {
+            $.ajax({
+                method: "GET",
+                url: "GetDog",
+                dataType: "json",
+                success: function (response) {
+                    print(response);
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        });
+
+        function print(data) {
+            document.write(data.Name + ": " + data.Type);
+        }
+
+        return {
+            getDog: getDog
+        }
+    })(jQuery);
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <script>
+            data.getDog();
+        </script>
+    </div>
+</body>
+</html>

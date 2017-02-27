@@ -134,6 +134,9 @@
     <Compile Include="Models\MammalsViewModel.cs" />
     <Compile Include="Models\Interface\IAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AnimalRepository\AnimalRepositoryMock.cs" />
+    <Compile Include="Repositories\AnimalRepository\AnimalRepositoryProd.cs" />
+    <Compile Include="Repositories\AnimalRepository\IAnimalRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

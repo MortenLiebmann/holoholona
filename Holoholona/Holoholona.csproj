@@ -128,9 +128,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Cat.cs" />
-    <Compile Include="Models\Dog.cs" />
-    <Compile Include="Models\Abstract\Mammal.cs" />
+    <Compile Include="Models\Animals\Mammals\Cat.cs" />
+    <Compile Include="Models\Animals\Mammals\Dog.cs" />
+    <Compile Include="Models\Abstract\Animal.cs" />
+    <Compile Include="Models\Enums\AnimalTypeEnum.cs" />
     <Compile Include="Models\MammalsViewModel.cs" />
     <Compile Include="Models\Interface\IAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

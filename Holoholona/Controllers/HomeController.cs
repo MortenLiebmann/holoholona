@@ -30,9 +30,9 @@ namespace Holoholona.Controllers
         }
 
         [HttpGet]
-        public ActionResult GetDog()
+        public ActionResult GetDog(int id)
         {
-            Animal dog = AnimalRepository.GetAnimal(1);
+            Animal dog = AnimalRepository.GetAnimal(id);
 
             return Json(dog, JsonRequestBehavior.AllowGet);
         }

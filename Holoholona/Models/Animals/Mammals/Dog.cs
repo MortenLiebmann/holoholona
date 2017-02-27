@@ -1,6 +1,6 @@
 ﻿namespace Holoholona.Models
 {
-    public class Dog : Mammal
+    public class Dog : Animal
     {
         
     }

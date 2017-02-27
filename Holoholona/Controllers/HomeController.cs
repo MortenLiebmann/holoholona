@@ -24,7 +24,7 @@ namespace Holoholona.Controllers
         {
             Animal dog = new Dog { Name = "Chihuahua", Type = AnimalTypeEnum.Mammal };
             Animal cat = new Cat { Name = "Siameser", Type = AnimalTypeEnum.Mammal };
-            GetMammalsViewModel Mammals = new GetMammalsViewModel { Dog = dog, Cat = cat };
+            MammalsViewModel Mammals = new MammalsViewModel { Dog = dog, Cat = cat };
 
             return Json(Mammals, JsonRequestBehavior.AllowGet);
         }

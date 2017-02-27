@@ -2,7 +2,7 @@
 {
     public class MammalsViewModel
     {
-        public Mammal Dog { get; set; }
-        public Mammal Cat { get; set; }
+        public Animal Dog { get; set; }
+        public Animal Cat { get; set; }
     }
 }

@@ -131,7 +131,7 @@
     <Compile Include="Models\Cat.cs" />
     <Compile Include="Models\Dog.cs" />
     <Compile Include="Models\Abstract\Mammal.cs" />
-    <Compile Include="Models\GetMammalsViewModel.cs" />
+    <Compile Include="Models\MammalsViewModel.cs" />
     <Compile Include="Models\Interface\IAnimal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

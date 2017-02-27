@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Holoholona.Models;
 using Holoholona.Models.Enums;
+using System;
 
 namespace Holoholona.Repositories.AnimalRepository
 {
@@ -12,7 +13,7 @@ namespace Holoholona.Repositories.AnimalRepository
             {
                 if (item.Id == id) return item;
             }
-            throw new KeyNotFoundException("Animal was not found");
+            throw new IndexOutOfRangeException("Animal does not exist");
         }
 
         public List<Animal> GetAnimals()

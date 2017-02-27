@@ -8,7 +8,7 @@ namespace Holoholona.Repositories.AnimalRepository
     {
         public Animal GetAnimal(int id)
         {
-            foreach (var item in GetAnimals())
+            foreach (Animal item in GetAnimals())
             {
                 if (item.Id == id) return item;
             }
@@ -18,10 +18,10 @@ namespace Holoholona.Repositories.AnimalRepository
         public List<Animal> GetAnimals()
         {
             Animal a1 = new Dog() { Id = 1, Name = "Chihuahua", Type = AnimalTypeEnum.Mammal };
-            Animal a2 = new Dog() { Id = 2, Name = "Bulldog", Type = AnimalTypeEnum.Mammal };
+            Animal a2 = new Dog() { Id = 2, Name = "Siamese", Type = AnimalTypeEnum.Mammal };
             List<Animal> lst = new List<Animal>();
-            lst.Add(a1);
-            lst.Add(a2);
+            lst.AddRange(new List<Animal> { a1, a2 });
+
             return lst;
         }
     }

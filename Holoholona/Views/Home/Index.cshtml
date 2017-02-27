@@ -15,10 +15,11 @@
             });
         });
 
-        function print(data) {
+        function print(Mammals) {
+            console.log(JSON.stringify(data, null, 4));
             document.write(
-                data.Dog.Name + ": " + data.Dog.Type + " / " +
-                data.Cat.Name + ": " + data.Cat.Type
+                Mammals[0].Name + ": " + Mammals[0].Type + " / " +
+                Mammals[1].Name + ": " + Mammals[1].Type
                 );
         }
 

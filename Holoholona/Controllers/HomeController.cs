@@ -1,7 +1,7 @@
 ﻿using Holoholona.Models;
 using System.Web.Mvc;
-using Holoholona.Models.Enums;
 using Holoholona.Repositories.AnimalRepository;
+using System.Collections.Generic;
 
 namespace Holoholona.Controllers
 {
@@ -32,17 +32,15 @@ namespace Holoholona.Controllers
         [HttpGet]
         public ActionResult GetDog()
         {
-            Animal dog = new Dog { Name = "Chihuahua", Type = AnimalTypeEnum.Mammal};
-            
+            Animal dog = AnimalRepository.GetAnimal(1);
+
             return Json(dog, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]
         public ActionResult GetMammals()
         {
-            Animal dog = new Dog { Name = "Chihuahua", Type = AnimalTypeEnum.Mammal };
-            Animal cat = new Cat { Name = "Siameser", Type = AnimalTypeEnum.Mammal };
-            MammalsViewModel Mammals = new MammalsViewModel { Dog = dog, Cat = cat };
+            List<Animal> Mammals = AnimalRepository.GetAnimals();
 
             return Json(Mammals, JsonRequestBehavior.AllowGet);
         }

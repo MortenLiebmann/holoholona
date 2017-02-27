@@ -5,8 +5,9 @@ using System.Web;
 
 namespace Holoholona.Models
 {
-    public class Cat : Mammal
+    public class GetMammalsViewModel
     {
-        
+        public Animal Dog { get; set; }
+        public Animal Cat { get; set; }
     }
 }

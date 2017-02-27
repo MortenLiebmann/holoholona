@@ -1,11 +1,29 @@
 ﻿using Holoholona.Models;
 using System.Web.Mvc;
 using Holoholona.Models.Enums;
+using Holoholona.Repositories.AnimalRepository;
 
 namespace Holoholona.Controllers
 {
     public class HomeController : Controller
     {
+        private IAnimalRepository AnimalRepository;
+        private bool debug = true;
+
+        public HomeController()
+        {
+            DebugAble(debug);
+        }
+
+        [NonAction]
+        private void DebugAble(bool debug)
+        {
+            if (debug)
+                AnimalRepository = new AnimalRepositoryMock();
+            else
+                AnimalRepository = new AnimalRepositoryProd();
+        }   
+
         public ActionResult Index()
         {
             return View();

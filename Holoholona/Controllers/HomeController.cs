@@ -1,49 +1,41 @@
-﻿using Holoholona.Web.Models;
-using System.Web.Mvc;
-using Holoholona.Web.Repositories.AnimalRepository;
-using System.Collections.Generic;
+﻿using System.Web.Mvc;
+using System.Linq;
+using Holoholona.Web.Models;
+using Holoholona.Services;
 
 namespace Holoholona.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IAnimalRepository AnimalRepository;
-        private bool debug = true;
-
-        public HomeController()
-        {
-            DebugAble(debug);
-        }
-
-        //TODO: Should be moved into a service factory
-        [NonAction]
-        private void DebugAble(bool debug)
-        {
-            if (debug)
-                AnimalRepository = new AnimalRepositoryMock();
-            else
-                AnimalRepository = new AnimalRepositoryProd();
-        }   
-
         public ActionResult Index()
         {
             return View();
         }
 
         [HttpGet]
-        public ActionResult GetDog(int id)
+        public ActionResult GetAnimal(int id)
         {
-            Animal dog = AnimalRepository.GetAnimal(id);
+            var AnimalService = ServiceFactory.AnimalService;
 
-            return Json(dog, JsonRequestBehavior.AllowGet);
+            var Animal = AnimalService.GetAnimal(id);
+
+            return Json(Animal, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]
-        public ActionResult GetMammals()
+        public ActionResult GetAnimals()
         {
-            List<Animal> Mammals = AnimalRepository.GetAnimals();
+            var AnimalService = ServiceFactory.AnimalService;
 
-            return Json(Mammals, JsonRequestBehavior.AllowGet);
+            var Animals = ServiceFactory.AnimalService.GetAnimals().AsEnumerable()
+                .OrderBy(x => x.Id)
+                .Select(x => new Animal {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Type = x.Type
+            });
+
+            return Json(Animals, JsonRequestBehavior.AllowGet);
         }
     }
 }

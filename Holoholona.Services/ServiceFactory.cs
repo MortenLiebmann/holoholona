@@ -1,15 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Holoholona.Services.Animals;
 
 namespace Holoholona.Services
 {
-    class ServiceFactory
+    public static class ServiceFactory
     {
-        static void Main(string[] args)
+        private static bool Debug;
+
+        static ServiceFactory()
         {
+            Debug = true;
+        }
+
+        public static IAnimalService AnimalService {
+            get
+            {
+                if (Debug)
+                    return new AnimalMockService();
+                return new AnimalProdService();
+            }
         }
     }
 }

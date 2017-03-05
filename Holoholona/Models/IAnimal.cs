@@ -1,4 +1,4 @@
-﻿using Holoholona.Web.Models.Enums;
+﻿using Holoholona.Entities.Enums;
 
 namespace Holoholona.Web.Models
 {

@@ -1,9 +1,9 @@
-﻿using Holoholona.Web.Models;
+﻿using Holoholona.Entities;
 using System.Collections.Generic;
 
-namespace Holoholona.Web.Repositories.AnimalRepository
+namespace Holoholona.Services.Animals
 {
-    interface IAnimalRepository
+    public interface IAnimalService
     {
         Animal GetAnimal(int id);
 

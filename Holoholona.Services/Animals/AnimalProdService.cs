@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Holoholona.Web.Models;
+using Holoholona.Entities;
 
-namespace Holoholona.Web.Repositories.AnimalRepository
+namespace Holoholona.Services.Animals
 {
-    public class AnimalRepositoryProd : IAnimalRepository
+    public class AnimalProdService : IAnimalService
     {
         public Animal GetAnimal(int id)
         {

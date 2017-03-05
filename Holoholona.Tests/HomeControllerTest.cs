@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Holoholona.Controllers;
-using System;
+using Holoholona.Web.Controllers;
 
 namespace Holoholona.Tests
 {

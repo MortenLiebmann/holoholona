@@ -4,7 +4,7 @@
         var getData = (function() {
             $.ajax({
                 method: "GET",
-                url: "@Url.Action("GetMammals", "Home")",
+                url: "@Url.Action("GetAnimals", "Home")",
                 dataType: "json",
                 success: function (response) {
                     print(response);

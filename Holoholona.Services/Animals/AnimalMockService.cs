@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
-using Holoholona.Web.Models;
-using Holoholona.Web.Models.Enums;
 using System;
+using Holoholona.Entities;
+using Holoholona.Entities.Enums;
+using Holoholona.Entities.Animals;
 
-namespace Holoholona.Web.Repositories.AnimalRepository
+namespace Holoholona.Services.Animals
 {
-    public class AnimalRepositoryMock : IAnimalRepository
+    public class AnimalMockService : IAnimalService
     {
         public Animal GetAnimal(int id)
         {

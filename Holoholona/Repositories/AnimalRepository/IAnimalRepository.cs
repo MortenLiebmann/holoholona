@@ -1,7 +1,7 @@
-﻿using Holoholona.Models;
+﻿using Holoholona.Web.Models;
 using System.Collections.Generic;
 
-namespace Holoholona.Repositories.AnimalRepository
+namespace Holoholona.Web.Repositories.AnimalRepository
 {
     interface IAnimalRepository
     {

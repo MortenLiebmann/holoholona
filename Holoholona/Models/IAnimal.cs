@@ -1,6 +1,6 @@
-﻿using Holoholona.Models.Enums;
+﻿using Holoholona.Web.Models.Enums;
 
-namespace Holoholona.Models
+namespace Holoholona.Web.Models
 {
     interface IAnimal
     {

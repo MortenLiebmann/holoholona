@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Holoholona.Models;
+using Holoholona.Web.Models;
 
-namespace Holoholona.Repositories.AnimalRepository
+namespace Holoholona.Web.Repositories.AnimalRepository
 {
     public class AnimalRepositoryProd : IAnimalRepository
     {

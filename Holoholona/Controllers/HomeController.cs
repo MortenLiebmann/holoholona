@@ -1,9 +1,9 @@
-﻿using Holoholona.Models;
+﻿using Holoholona.Web.Models;
 using System.Web.Mvc;
-using Holoholona.Repositories.AnimalRepository;
+using Holoholona.Web.Repositories.AnimalRepository;
 using System.Collections.Generic;
 
-namespace Holoholona.Controllers
+namespace Holoholona.Web.Controllers
 {
     public class HomeController : Controller
     {

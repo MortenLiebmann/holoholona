@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Holoholona.Models;
-using Holoholona.Models.Enums;
+using Holoholona.Web.Models;
+using Holoholona.Web.Models.Enums;
 using System;
 
-namespace Holoholona.Repositories.AnimalRepository
+namespace Holoholona.Web.Repositories.AnimalRepository
 {
     public class AnimalRepositoryMock : IAnimalRepository
     {

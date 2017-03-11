@@ -47,9 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
-    <Compile Include="Animals\Mammals\Cat.cs" />
-    <Compile Include="Animals\Mammals\Dog.cs" />
     <Compile Include="Enums\AnimalEnums.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

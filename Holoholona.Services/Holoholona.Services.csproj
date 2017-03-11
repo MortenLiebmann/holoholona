@@ -49,6 +49,8 @@
     <Compile Include="Animals\AnimalMockService.cs" />
     <Compile Include="Animals\AnimalProdService.cs" />
     <Compile Include="Animals\IAnimalService.cs" />
+    <Compile Include="Players\IPlayerService.cs" />
+    <Compile Include="Players\PlayerMockService.cs" />
     <Compile Include="ServiceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

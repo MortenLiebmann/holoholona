@@ -13,7 +13,7 @@ namespace Holoholona.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult GetAnimal(int id)
+        public ActionResult GetPlayer(int id)
         {
             var AnimalService = ServiceFactory.AnimalService;
 

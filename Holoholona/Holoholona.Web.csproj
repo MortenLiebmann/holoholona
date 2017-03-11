@@ -129,8 +129,10 @@
     <Compile Include="Models\Animals\Mammals\Cat.cs" />
     <Compile Include="Models\Animals\Mammals\Dog.cs" />
     <Compile Include="Models\Animal.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\MammalsViewModel.cs" />
     <Compile Include="Models\IAnimal.cs" />
+    <Compile Include="Models\Player\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

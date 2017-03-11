@@ -6,6 +6,6 @@ namespace Holoholona.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public AnimalTypeEnum Type { get; set; }
+        public AnimalEnums.AnimalType Type { get; set; }
     }
 }

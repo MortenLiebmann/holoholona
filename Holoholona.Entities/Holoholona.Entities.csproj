@@ -49,7 +49,7 @@
     <Compile Include="Animal.cs" />
     <Compile Include="Animals\Mammals\Cat.cs" />
     <Compile Include="Animals\Mammals\Dog.cs" />
-    <Compile Include="Enums\AnimalTypeEnum.cs" />
+    <Compile Include="Enums\AnimalEnums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

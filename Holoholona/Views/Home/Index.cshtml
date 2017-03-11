@@ -4,7 +4,8 @@
         var getData = (function() {
             $.ajax({
                 method: "GET",
-                url: "@Url.Action("GetAnimals", "Home")",
+                data: "id=" + 1,
+                url: "@Url.Action("GetPlayer", "Home")",
                 dataType: "json",
                 success: function (response) {
                     print(response);
@@ -15,12 +16,9 @@
             });
         });
 
-        function print(Mammals) {
-            console.log(JSON.stringify(data, null, 4));
-            document.write(
-                Mammals[0].Name + ": " + Mammals[0].Type + " / " +
-                Mammals[1].Name + ": " + Mammals[1].Type
-                );
+        function print(player) {
+            console.log(JSON.stringify(player, null, 4));
+            document.write(JSON.stringify(player, null, 4));
         }
 
         return {

@@ -1,0 +1,46 @@
+﻿<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script>
+    var data = (function ($) {
+        var getData = (function() {
+            $.ajax({
+                method: "GET",
+                url: "@Url.Action("GetGameStructure", "Json")",
+                dataType: "json",
+                success: function (response) {
+                    debugger;
+                    //print(response);
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        });
+
+        function print(Mammals) {
+            console.log(JSON.stringify(data, null, 4));
+            document.write(
+                Mammals[0].Name + ": " + Mammals[0].Type + " / " +
+                Mammals[1].Name + ": " + Mammals[1].Type
+                );
+        }
+
+        return {
+            getData: getData
+        }
+    })(jQuery);
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <script>
+            data.getData();
+        </script>
+    </div>
+</body>
+</html>

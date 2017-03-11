@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holoholona.Services", "Holo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holoholona.Entities", "Holoholona.Entities\Holoholona.Entities.csproj", "{244ACECB-39DA-4015-83AA-7224B64EFCAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holoholona.Services.Tests", "Holoholona.Services.Tests\Holoholona.Services.Tests.csproj", "{19F7418A-B27A-4FDD-B090-EE9248C2D773}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{244ACECB-39DA-4015-83AA-7224B64EFCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{244ACECB-39DA-4015-83AA-7224B64EFCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{244ACECB-39DA-4015-83AA-7224B64EFCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F7418A-B27A-4FDD-B090-EE9248C2D773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F7418A-B27A-4FDD-B090-EE9248C2D773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F7418A-B27A-4FDD-B090-EE9248C2D773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F7418A-B27A-4FDD-B090-EE9248C2D773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

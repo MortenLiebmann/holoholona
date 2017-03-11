@@ -15,11 +15,11 @@ namespace Holoholona.Web.Controllers
         [HttpGet]
         public ActionResult GetPlayer(int id)
         {
-            var AnimalService = ServiceFactory.AnimalService;
+            var PlayerService = ServiceFactory.PlayerService;
 
-            var Animal = AnimalService.GetAnimal(id);
+            var Player = PlayerService.GetPlayer(id);
 
-            return Json(Animal, JsonRequestBehavior.AllowGet);
+            return Json(Player, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

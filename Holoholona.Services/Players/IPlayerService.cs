@@ -2,7 +2,7 @@
 
 namespace Holoholona.Services.Players
 {
-    interface IPlayerService
+    public interface IPlayerService
     {
         Player GetPlayer(int id);
     }

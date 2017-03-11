@@ -18,6 +18,7 @@ namespace Holoholona.Services.Animals
 
         public List<Animal> GetAnimals()
         {
+            //todo: use animal repository
             Animal a1 = new Animal() { Id = 1, Name = "Chihuahua", Type = AnimalType.Small };
             Animal a2 = new Animal() { Id = 2, Name = "Siamese", Type = AnimalType.Small };
             List<Animal> lst = new List<Animal>();

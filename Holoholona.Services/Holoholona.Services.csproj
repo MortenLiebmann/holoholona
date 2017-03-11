@@ -51,6 +51,8 @@
     <Compile Include="Animals\IAnimalService.cs" />
     <Compile Include="Players\IPlayerService.cs" />
     <Compile Include="Players\PlayerMockService.cs" />
+    <Compile Include="Players\PlayerProdService.cs" />
+    <Compile Include="Repositories\AnimalRepositoryMock.cs" />
     <Compile Include="ServiceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -63,6 +65,7 @@
       <Name>Holoholona.Entities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -30,7 +30,7 @@ namespace Holoholona.Web.Controllers
             var Animals = ServiceFactory.AnimalService.GetAnimals().AsEnumerable()
                 .OrderBy(x => x.Id)
                 .Select(x => new Animal {
-                    Id = x.Id,
+                    Id = System.Guid.NewGuid(),
                     Name = x.Name,
                     Type = x.Type
             });
